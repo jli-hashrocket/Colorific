@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var selectedColor: UIColor?
     
-    let colors: [UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.purple, UIColor(red: 255/255, green:0/255 ,blue: 120/255, alpha: 1.0), UIColor.black]
+    let colors: [UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.purple, UIColor(red: 255/255, green:0/255 ,blue: 120/255, alpha: 1.0), UIColor.black, UIColor.yellow]
     
     
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return self.colors.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

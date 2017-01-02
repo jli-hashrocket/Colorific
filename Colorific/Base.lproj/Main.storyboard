@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="136.5" y="138.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Color View Controller-->
         <scene sceneID="7BY-1q-oaM">
             <objects>
-                <viewController id="7z3-XC-ojq" sceneMemberID="viewController">
+                <viewController id="7z3-XC-ojq" customClass="ColorViewController" customModule="Colorific" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sC3-5e-D2q"/>
                         <viewControllerLayoutGuide type="bottom" id="2DL-cU-k3O"/>
@@ -83,12 +83,29 @@
                     <view key="view" contentMode="scaleToFill" id="MGQ-wa-BUV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bLd-td-Yp9">
+                                <rect key="frame" x="10" y="276" width="355" height="116.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bLd-td-Yp9" firstAttribute="centerY" secondItem="MGQ-wa-BUV" secondAttribute="centerY" id="DBV-gD-Sjj"/>
+                            <constraint firstItem="bLd-td-Yp9" firstAttribute="leading" secondItem="MGQ-wa-BUV" secondAttribute="leading" constant="10" id="LPo-S1-lJJ"/>
+                            <constraint firstAttribute="trailing" secondItem="bLd-td-Yp9" secondAttribute="trailing" constant="10" id="iEu-2D-UOB"/>
+                            <constraint firstItem="bLd-td-Yp9" firstAttribute="centerX" secondItem="MGQ-wa-BUV" secondAttribute="centerX" id="yaS-F2-iHL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorLabel" destination="bLd-td-Yp9" id="HDI-ud-D4Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPa-5a-Tve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="139"/>
+            <point key="canvasLocation" x="864.79999999999995" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
